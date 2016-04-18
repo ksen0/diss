@@ -1,7 +1,5 @@
-# oceancomp
-Dissertation what now!
+# Impact Beyond Adoption: How Interaction between Programming and Scientific Practices Shapes Modes of Inquiry in Four Oceanography Teams
 
-
-https://www.beeminder.com/katerena/goals/dissertation/graph
+## Dissertation Work Goal Progress
 
 ![Beeminder](https://www.beeminder.com/katerena/goals/dissertation/graph)
