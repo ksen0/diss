@@ -1,5 +1,11 @@
-# Impact Beyond Adoption: How Interaction between Programming and Scientific Practices Shapes Modes of Inquiry in Four Oceanography Teams
+# Impact Beyond Adoption
 
-## Dissertation Work Goal Progress
+*Sub-title:* How Interaction between Programming and Scientific Practices Shapes Modes of Inquiry in Four Oceanography Teams
+
+*Abstract:*
+
+## Figures
+
+## Productivity
 
 ![Beeminder](https://www.beeminder.com/katerena/goals/dissertation/graph)
