@@ -1,0 +1,22 @@
+
+\begin{sidewaystable}
+  \centering
+
+  \begin{tabularx}{\textwidth}{@{}>{\bfseries}RRRRR@{}}
+    \toprule
+    & \textbf{BioGeoChem-M.} & \textbf{CustomInst.-Lab} & \textbf{Omics-Lab} & \textbf{RegionalN.-Model} \\
+     \midrule
+     Closeness & low & pairwise & low & high \\
+     \rowcolor{Gray}
+     In-house S.A. & Cluster, Modeling & Web, Viz, Scripting & N/A & Analysis, Web, Viz \\
+     External S.A. & Viz & Analysis, Data &  Analysis, Hardware & Cluster \\
+     \rowcolor{Gray}
+     Other tech & Cluster (modeling) & Custom hardware (ship) & Lab hardware & Cluster (modeling)
+  \end{tabularx}
+
+  \caption[Summary of interpersonal code work resources available to the oceanography participant population, categorized by group]%
+  {\narrower
+\textbf{Summary of interpersonal code work resources available to the oceanography participant population, categorized by group.} This table summarizes the code work context, in terms of constraints and resources. First, \textbf{closeness} refers to closeness of code work in the same sense as included in the Figure \ref{fig:events}. This is a sweeping summary of overall dynamics, and furthermore only includes \textit{code} work (e.g., the Omics-Lab would have ``high'' closeness of work if I included lab work, as well). Second, \textbf{S.A.} stands for ``software advisor,'' and this role is described more in Subsection 3.3.3. The ``In-house S.A.'' row includes a brief description of the kinds of work that S.A. does, such as handling a computing cluster, visualization work, or data management. The ``External S.A.'' refers to a collaborator (from CS or eSci) or department staff that is somehow less accessible than the in-house S.A., or in more specialized or dire situations. The last row includes an overview of other technology that is not covered by my account of code work but which is a major part of that group's activities.}
+  \label{tab:pop_OCN2}
+
+\end{sidewaystable}

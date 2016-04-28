@@ -1,0 +1,22 @@
+\chapter{Evaluation of Intervention Outcomes}
+
+Computer-science study of scientific work sometimes describes the 
+current state of programming, code, data and analysis infrastructure, and software production in general (in the scientific domain) as somewhere between unsustainably frustrating and untenably chaotic. Recent technological advances have changed the set of available tools, accepted practices, and institutional resources. However, what is `recent?' A mid-2000s  article speaks of a `data avalanche' in environmental
+sciences, calling for a ``computer science agenda spanning databases, visualization, workflows'' \cite{howe2008end}.
+Speaking about the early 1950s, Edwards writes in A Vast Machine that ``climatologists ... 
+faced not only an explosion of data but also a plethora of alternatives
+for coping with it'' \cite{edwards2010vast}. These are by far not the only paragraphs
+on the topic that paint a picture of the scientist coping with 
+``cataclysmic'' amounts of data, requiring technological innovation.
+
+Such an approach of finding problems, or opportunities, and building technological interventions to address them leaves few options for evaluation: there is one way to succeed, and many ways to ``fail.'' The ``failure'' may still offer valuable insights, but the evolution of the problem or the (informative) shortcomings of the solution become defensive arguments. The conceptual framework offered thus far in this dissertation is intended to complement this. Any new software tool or programming skill is adopted into - and adapts - a rich working environment that includes technological, social, and cognitive resources. Even if the adoption is not sustained over time, the attempt itself can translate into an \textit{expanded imagination of possibilities}, if not actual change in practice. Although the sense of elegance of a scientist who codes may not coincide with the sense of elegance nurtured in computer science training and professional communities, it nevertheless informs reactions like excitement and boredom that affect decision making outside of interpersonal or utilitarian concerns (see Chapter 6).
+
+
+\begin{figure}
+    \centering
+    \includegraphics[page=1,width=1\textwidth]{7conc/Ch7_TOC.pdf}
+    \caption[Three different ways in which computer science intervenes in domain-science code work.]{\textbf{Three different ways in which computer science intervenes in domain-science code work.} (a) By working on a particular project that is part of a larger infrastructural and collaborative effort and which ultimately aims to support many scientists in their study of many different phenomena; (b) by organizing educational interventions, like workshops, tutorials, and mentorship programs to support scientists who code in developing programming skills, who are then mostly on their own to apply those skills to particular projects and research questions of interest; and (c) by collaborating closely with a group pursuing particular research questions, and building tools or intervention specifically tailored to that group or context. ``CS/SE'' stands for ``Computer Science / Software Engineering'' but extends other computing-affiliated researchers.}
+    \label{fig:ch7toc}
+\end{figure}
+
+The Figure \ref{fig:ch7toc} illustrates the different intervention contexts of the sections in this chapter, in that order. Each of the sections tells a story using the conceptual framework I have developed so far. Each case study also \textbf{emphasizes evaluative comments} made by oceanographers relative to the intervention in question, and concludes with a \textbf{take-away for evaluation}. These are summarized in the final section as encouraging intentional recognition of ways in which groups make progress even when specific technological interventions do not work out.

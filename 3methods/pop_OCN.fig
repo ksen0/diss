@@ -1,0 +1,32 @@
+
+
+\begin{sidewaystable}
+  \centering
+
+  \begin{tabularx}{\textwidth}{@{}>{\bfseries}RRRRR@{}}
+    \toprule
+    & \textbf{BioGeoChem-M.} & \textbf{CustomInst.-Lab} & \textbf{Omics-Lab} & \textbf{RegionalN.-Model} \\ 
+    \midrule
+    Inclusion & \multicolumn{2}{c}{Data Science Environment} & \multicolumn{2}{c}{Software Carpentry Workshop} \\ 
+    \rowcolor{Gray}
+    \# Participants & \multicolumn{1}{c}{11} & \multicolumn{1}{c}{15} & \multicolumn{1}{c}{9} & \multicolumn{1}{c}{11} \\
+    \# Part. Core & \multicolumn{1}{c}{7} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{4} & \multicolumn{1}{c}{6} \\
+    % \cmidrule{3-4}
+    % & &  \multicolumn{2}{c}{\emph{(some collaboration)}} & \\
+     \midrule
+     \multicolumn{5}{c}{\textbf{Interest in Programming and Core Challenges}}\\ 
+     \midrule 
+     Analysis & \small{Transformations and Comparisons} & \small{Faster, More Data} & \small{More Automation} & \small{More Features} \\
+     \rowcolor{Gray}
+     Visualization & Interactivity & RT+Archive site & -Omics big data & Daily forecast site \\
+     Big Data & Access & Storage & Handling &  Access \\
+     \midrule
+  \end{tabularx}
+
+  \caption[Summary of interest in code work among oceanography participant population, categorized by group]%
+  {\narrower
+\textbf{Summary of interest in code work among oceanography participant population, categorized by group.} In addition to inclusion criterion and participant count (total and in the core group), this table provides a summary of the \textbf{core challenges} that the teams have in mind as they explore various interests in programming. ``RT'' stands for ``real-time,'' ``viz'' is short for ``visualization.''}
+  \label{tab:pop_OCN}
+
+\end{sidewaystable}
+

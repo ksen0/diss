@@ -1,0 +1,223 @@
+% LaTeX format:
+% via University of Washington thesis LaTeX document class
+% by Jim Fox fox@washington.edu,  Revised for version 2015/03/03
+% of uwthesis.cls
+% Copyright (c) 1985-2014 The University of Washington
+% Licensed under the Apache License, Version 2.0 (the "License")
+% http://www.apache.org/licenses/LICENSE-2.0
+ 
+\documentclass [11pt, proquest] {uwthesis}
+\usepackage{soul}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+% this is necessary so, the \url macro works
+\usepackage{url}
+
+% colors!!!! WOW!!!!!!!!!! amaze
+\usepackage{xcolor,colortbl}
+\definecolor{White}{rgb}{1,1,1}
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightBlue}{rgb}{0.9,0.9,1}
+
+% landscape figures and tables :)
+\usepackage{rotating}
+% very table! much scientific! wow!
+\usepackage{booktabs, tabularx}
+% define a new column type: where width is aoutomatically adjysted 'X' and set ragged right
+\newcolumntype{R}{>{\raggedright\arraybackslash}X}
+\newcolumntype{G}{>{\columncolor{Gray}}R}
+% \cline in codework.fig
+\usepackage{hhline}
+
+% cool quotes
+\usepackage[autostyle=true, english=american]{csquotes}
+
+% we use it to check if an optional parameter is set in \litquote
+\usepackage{xifthen}
+
+% needed to \hyp{}
+\usepackage{hyphenat}
+
+% nicer bib style
+%\usepackage{natbib}
+\SetCiteCommand{\cite}
+
+% redefine the quotation formatting
+\def\quote{%
+  \list{}{\leftmargin=3em\rightmargin=1em}%
+  \item\relax}
+\renewcommand*{\mkcitation}[1]{#1}
+
+% usage:
+%
+% \litquote[pp. 80]{myBibKey2001}{the cool citation from the paper}
+% \litquote{myBibKey2001}{the cool citation from the paper}
+%
+\newcommand{\litquote}[3][]{%
+    \ifthenelse{\equal{#1}{}}{%
+        \blockcquote{#2}{#3}%
+    }{%
+        \blockcquote[#1]{#2}{#3}%
+    }%
+}
+
+% usage:
+%
+% \pplquote[(SWC)]{Smart Guy's Buddy}{the cool citation of the Smart Guy's Buddy}
+% \pplquote{Smart Guy's Buddy}{the cool citation of the Smart Guy's Buddy}
+%
+\newcommand{\pplquote}[3][]{\blockquote[ {\it --~#1}~#2]{#3}}
+
+% prevent widows and orphans
+\clubpenalty = 10000 \widowpenalty = 10000 \displaywidowpenalty = 10000
+%\hyphenpenalty = 10000 \exhyphenpenalty = 10000
+
+%
+% The following line would print the thesis in a postscript font 
+
+% \usepackage{natbib}
+% \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
+
+\setcounter{tocdepth}{1}  % Print the chapter and sections to the toc
+ 
+
+% ==========   Local defs and mods
+%
+\newcommand{\jinna}[1]{\textsf{\textbf{[TODO jinna: #1]}}}
+\newcommand{\kt}[1]{\textsf{\textbf{[TODO kt: #1]}}}
+\newcommand{\hr}[1]{\textsf{\textbf{[TODO heinrich: #1]}}}
+\newcommand{\gln}[1]{\textsf{\textbf{[TODO glnelson: #1]}}}
+\newcommand{\gn}[1]{\textsf{\textbf{[TODO glnelson: #1]}}}
+\newcommand{\todo}[2]{\textsf{\textbf{[TODO #2 (via #1)]}}}
+
+\begin{document}
+ 
+% ==========   Preliminary pages
+%
+% ( revised 2012 for electronic submission )
+%
+
+\prelimpages
+ 
+%
+% ----- copyright and title pages
+%
+\Title{Influence apart from Adoption: How Interaction between Programming and Scientific Practices Shapes Modes of Inquiry in Four Oceanography Teams}
+\Author{Kateryna Kuksenok}
+\Year{2014-2016}
+\Program{University of Washington Computer Science and Engineering}
+
+\Chair{Cecilia Aragon}{}{Human Centered Design and Engineering}
+\Chair{James Fogarty}{}{Computer Science and Engineering}
+\Signature{Gina Neff}
+
+\copyrightpage
+
+\titlepage
+
+\setcounter{page}{-1}
+\input{abstract.part}
+ 
+%
+% ----- contents & etc.
+%
+\tableofcontents
+\listoffigures
+\listoftables
+ 
+%
+% ----- glossary 
+%
+
+%\chapter*{Glossary}      % starred form omits the `chapter x'
+%\addcontentsline{toc}{chapter}{Glossary}
+
+%\thispagestyle{plain}
+%\input{glossary.part}
+
+%
+% ----- acknowledgments
+%
+\acknowledgments{
+This document is essentially a systematic reflection on a variety of things that I learned from dozens of inventive, curious, and reflective people. It would not be possible if these very busy people did not take the time out of their days (over weeks and months) to explain what they were doing, sometimes even to endure my hovering over them with questions all day. I am grateful for their patience, their generosity, and their goodwill towards me.
+}
+
+%
+% ----- dedication
+%
+%\dedication{\begin{center}to Werner Herzog, my spirit animal\end{center}}
+
+%
+% end of the preliminary pages
+ 
+ 
+ 
+%
+% ==========      Text pages
+%
+
+\textpages
+
+\input{1intro/10_intro.part}
+
+\input{2relwork/20_intro.part}
+\input{2relwork/21_scisoft.part}
+\input{2relwork/22_interv.part}
+\input{2relwork/23_setting.part}
+\input{2relwork/24_conc.part}
+
+\input{3methods/30_intro.part}
+\input{3methods/31_methods.part}
+\input{3methods/32_teams.part}
+\input{3methods/33_stories.part}
+\input{3methods/34_conc.part}
+
+\input{4teams/40_intro.part}
+\input{4teams/41_personal.part}
+\input{4teams/42_perfectworld.part}
+\input{4teams/43_visstory.part}
+\input{4teams/44_conc.part}
+
+\input{5seng/50_intro.part}
+\input{5seng/51_data.part}
+\input{5seng/52_vc.part}
+\input{5seng/53_feedback.part}
+\input{5seng/54_conc.part}
+
+\input{6time/60_intro.part}
+\input{6time/61_leap.part}
+\input{6time/62_aweint.part}
+\input{6time/63_exciting.part}
+\input{6time/64_tableau.part}
+\input{6time/65_conc.part}
+
+\input{7conc/70_intro.part}
+\input{7conc/71_shambolic.part}
+\input{7conc/72_hopesevent.part}
+\input{7conc/73_threetakes.part}
+\input{7conc/74_conc.part}
+
+\input{8_theend.part}
+
+\printendnotes
+
+%
+% ==========   Bibliography
+%
+\nocite{*}   % include everything in the uwthesis.bib file
+\bibliographystyle{plain}
+%\bibliographystyle{abbrvnat} % option for a nicer bib style :)
+\bibliography{uwthesis}
+%
+% ==========   Appendices
+%
+\appendix
+\raggedbottom\sloppy
+
+\input{appendices/interview.part}
+
+%\vita{ }
+
+
+\end{document}

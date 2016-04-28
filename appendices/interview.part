@@ -1,0 +1,31 @@
+\chapter{Interview Protocols}
+
+
+When interviewing participants in the SWC post-interviews group (see Figure \ref{fig:pops}), I asked the following questions:
+
+\begin{itemize}
+\setlength\itemsep{0em}
+    \item How did you decide to go to SWC? What was one surprising thing you learned?
+    \item Tell me about something that you learned that you incorporated into your [data science workflow / analysis pipeline - the phrasing reflected anything that the participant can used, defaulting to ``data science workflow'' but relying on follow-up questions to broaden the scope to instances of ``casual'' code work that may have been initially omitted.]
+\item Followup questions about lab mates, or if not mentioned: did other people in your lab or group go? Are there people you work closely with, or of whom you ask questions when you need help? How would you characterize your role, and the roles of others in your group?
+\item List top 5 data science tools or resources.
+\item If there was a perfect event, course, or resource for you to learn what you're most interesting in learning about doing data science, what would that be like?
+\item \emph{For follow-up interviews:} What's something interesting that you learned to do or make recently, in terms of collecting cleaning analyzing or presenting your data or results?
+\end{itemize}
+
+As part of the observation protocol, I asked questions about recent times that people had: created a chart or visualization; cleaned or processed data; analyzed data; worked on a paper, presentation, poster, talk, or other communication-oriented artifact; programming, scripting, coding, tuning model parameters, and so on; explaining code or data to others. Questions about ``what are you currently working on'' included follow-ups such as:
+
+\begin{itemize}
+\setlength\itemsep{0em}
+    \item What's the current thing you're working on? How long have you been working on it? What are you stuck on?
+\item What other people are you closely working with? Who else is involved in this project?
+\item What are you currently struggling with? Describe the current challenge.
+\item What is something you recently decided to stop doing, or start doing differently?
+\item How do you decide what to work on next?
+\item How do you make your code or software useful?
+\item \emph{In the beginning of the day:} What are the things you plan or hope to do today?
+\item \emph{At the end of the day:} How has today gone, relative to your expectations and hopes in the beginning of the day?
+\end{itemize}
+
+
+In addition to interviews I conducted with past SWC attendees and oceanographers during the course of year-long observation, the study analysis has included interviews conducted by UW colleagues in 2013 and 2014 with oceanographers, which asked the participants: ``what projects are you currently working on?'' and related followups; ``what are your funding sources?''; ``what software do you use / for what / how did that come about?''

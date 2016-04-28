@@ -1,0 +1,34 @@
+\begin{table}[htb]
+  \centering
+
+  \begin{tabularx}{\textwidth}{@{}>{\bfseries}l|l|X@{}}
+    \hline
+      & Scripting & processing data, coping with formatting \\
+    \cline{3-3}
+    Kleenex & & Exploration, iterative visualization, analysis \\
+    \cline{2-3}
+            & Modeling & Using model \\
+    \cline{1-1}
+    \cline{3-3}
+            & & Adding to model \\
+    \cline{2-3}
+         & Integrating new package & Documenting code \\
+    \cline{3-3}
+    Library        & & Verifying whole pipeline \\
+    \cline{2-3}
+            & Goliath & Making something into a module \\
+            
+    \cline{3-3}
+            & & Setting up / using pipeline \\
+    \hline
+    Data Stewardship   & \multicolumn{2}{X}{Design and implementation of endpoint for data access} \\
+    \hline
+  \end{tabularx}
+
+  \caption[Categorization of code work observed.]%
+  {\narrower
+\textbf{  Categorization of code work observed.} The categorization of ``kleenex'' and ``library'' maps onto the distinction embraced by Heaton and Carver \cite{heaton2015claims}; data stewardship can be exemplified in the Ocean Informatics work \cite{baker2008enabling}, and ``Goliath'' refers t major programs that are programming environments that enable constituent libraries and packages, with the phrase borrowed from a participant story included in Section 4.3. The arrangement of the categories and distinctions made reflect the focus of this study on the individual experience of doing code work - writing from scratch or modifying? Open-ended approach considering multiple possibilities, or skeptical and interrogating a recent implementation of one such possibility?
+  }
+  \label{fig:codework}
+
+\end{table}
