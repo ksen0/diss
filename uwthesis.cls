@@ -641,10 +641,9 @@
        \textofChair{Chair of the Supervisory Committee: }
 
 \newcount\@Chair \@Chair0
-\def\Chair#1#2#3{
+\def\Chair#1#2{
   \global\@namedef{C:\expandafter\the\@Chair}{#1}
-  \global\@namedef{T:\expandafter\the\@Chair}{#2}
-  \global\@namedef{D:\expandafter\the\@Chair}{#3}
+  \global\@namedef{D:\expandafter\the\@Chair}{#2}
   \ifnum\@Chair>0\textofChair{Co-Chairs of the Supervisory Committee:}\fi
   \global\advance\@Chair by1}
 

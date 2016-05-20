@@ -5,6 +5,12 @@ The ocean covers two thirds of the earth's surface. Studying anything about the 
 The place of software in this multi-disciplinary field has been both to enable computational modeling - crucial for causal reasoning about this complex dynamical system, using the variety of disparate data - and to enable generating, handling, curating, and comparing increasing quantities of data. Figure \ref{fig:poc} illustrates a simplification of the loci of ``code work'' in oceanography. This chapter reviews related literature on programming practices in science (Section 2.1), software interventions for earth, ocean, or ecology research (Section 2.2), and software as it plays a role in the practice of oceanography (Section 2.3). In Section 2.4, I synthesize these various threads and motivate this study, which is unique in its broad concern with many different kinds of code work.
 
 
+
+%\begin{figure}[thb]
+%  \centering
+%  \linespread{1.0}
+%  \resizebox{1\textwidth}{!}{\input{2relwork/poc.tex}}
+  
 \begin{figure}
     \centering
     \includegraphics[page=1]{2relwork/PlaceofCode.pdf}

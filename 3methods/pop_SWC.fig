@@ -1,0 +1,29 @@
+\begin{figure}[p]
+ \begin{fullpage}
+  \uwsinglespace
+  
+\begin{center}
+\begin{tabular}{ l l l l }
+  & \textbf{Area and Background} & \textbf{Reason for Participation} & \textbf{Expectation and Outcome} \\ 
+ P01 & cell5 & cell6 \\  
+ P02 & cell8 & cell9    
+\end{tabular}
+\end{center}
+
+In these descriptions, specific tools or skills are underlined; of these, they ones explicitly covered in SWC are:
+
+\begin{itemize}
+    \item bash shell: 
+    \item Python (programming language) and iPython Notebook (a programming environment) matplotlib is a Python package, which can be used to make visualizations in the iPyNB programming environment
+    \item R (programming language favored for statistical work) and RStudio (environment). ggplot and ggplot2 is a library/package for doing visualization more effectively.
+    \item git (command-line tool), GitHub (cloud hosting service that integrates with the command-line tool, restricts users to make repositories public, and cultivates an open-source community). Also: hg (pronounced "Mercurial"), which is another command-line tool, and BitBucket (another hosting service but which allows more private repositories, free for academics). hg and git are slightly different but essentially similar version control tools, and are supported by both hosting services; one can have a git repository hosted on BitBucket. Alternatively, one can have a "locally-hosted" git repository, using the tool with all its benefits on a local backed-up disk or machine rather than in the cloud. This option is less appealing than a github account to many of those starting out, despite the act of making code public comes with considerable self-consciousness and worry
+\end{itemize}
+
+      \caption[The oceanography participant population, categorized by group]%
+   {\narrower
+   %TODO description go here
+   }
+  \label{pop_SWC}
+
+\end{fullpage}
+\end{figure}
