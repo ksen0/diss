@@ -38,6 +38,51 @@ Like scientific code work, F/LOSS distinguishes itself from the ``typical'' indu
 
 \tk Howison and Herbsleb identify several different \textit{software production systems} \cite{howison2011scientific}. The software production systems are combinations of the social and institutional contexts and in incentives. One such ins --- incidental software; parallel software practice (similar to what Paine and Lee talk about in \cite{paine2014producing}).  which the authors identified as unproblematic. Then a , a "dual science and software pratice is a somewhat questionable proposition for working scientists" because aside from creation effort the maintenance effort is huge and inescapable (which \cite{trainer2015personal} also talks abotu). Then there is software subfeidl - eg, in computational biology - needs and repuatation stuff ``appropriately aligned" however "separation between a software publication and a working software" persists. (One of my participants refers to this as "Gradware" speking specficialy of a bioinformatics roduct - see Section 7.2). "Software and algorithmic applications advance the theory but someone has to maintain and support the workign software" whcih is at the heart of the technical challenges in Section 7.3 Lastly there are hybrid incentive sturctures between direct academic credit and communal software production between cooperative support service and indirect acaemic credit ---CONTRAST THIS WITH THE KELLY DELINEARIONG - THEN TIE BACK TO GENERALIZABILITY CLAIMS IN INTRO
 
+\tk AMETHODICAL SNIPPET RESUE \cite{philip2012software} and truex \cite{truex2000amethodical} privileged methodical / marginalized amethodical
+
+TRUEX GROUNDWORK: 
+
+Privileged Methodical Marginalized Amethodical
+1. Systems development is a
+managed, controlled
+process.
+3. Systems development is a
+linear, sequential process.
+5. Systems development is a
+replicable, universal
+process.
+7. Systems development is a
+rational, determined, and
+goal-driven process.
+2. Systems development is a
+random opportunistic
+process driven by accidents.
+4. Systems development is
+simultaneous, overlapping,
+and there are gaps.
+6. Systems development
+occurs in completely unique
+and idiographic forms.
+8. Systems development is
+negotiated, compromised,
+and capricious.
+
+THEIR STUFF 
+
+Methodical CBSE Amethodical Remixing
+Components
+Repositories
+Controlled and planned
+Correctness and consistency
+Snippets
+Web pages, email, forums
+Ad hoc
+Reputation and appearance
+
+Implications offer design of tools that support more realistic everyday scenarios of re-mixing, which blend the dialectic methodical and amethodical narratives.
+
+\tk Kelly uses the "amethodical" language to label the way that scientists themselves concieve of their programming work: Scientific software development has been characterized as enduser programming (Segal, 2004), considered a candidate for Agile iterative development (e.g., Ackroyd et al., 2008), and has been regulated with waterfall-style software quality development standards (Canadian Standards Association). Scientists themselves characterize their development approach as “a-methodical” (Truex et al., 2000).
+
 
 %The authors develop measurements for ownership (e.g., "how much of the development activity for a component comes from one developer") and test their hypothesis on components from Windows 7 and Windows Vista releases, showing, among some other nuanced claims, that "he number of minor contributors has a strong positive relationship with both pre- and post-release failures even when controlling for metrics such as size, churn, and complexity." In describing generalizability of their work, the authors comment: "the results of empirical software engineering studies do not always generalize to settings where a different process is used. The process that is used may dictate the effect of other factors on software quality as well. ...  Microsoft employs strong ownership practices and our results are much more likely to hold in other industrial settings where similar policies are in place. Examining the effect of ownership in contexts where ownership is not stressed as highly, such as in many open source software (OSS) projects, is an area of continued study."
 
@@ -46,7 +91,6 @@ Like scientific code work, F/LOSS distinguishes itself from the ``typical'' indu
 %In prior work with colleagues, I studied the expression of affect in scientific collaborations. With Scott et al, we developed a taxonomy for affect expression appropriate for text-based chat in a scientific collaboration \cite{scott2012adapting}. With Brooks et al, we worked on a machine learning approach to help annotate a large corpus of chat logs with these labels \cite{brooks2013statistical}. Our focus was on how emotions were expressed and mediated through technology in a collaborative, creative scientific setting over time (in that case, over a 5-year astronomy collaboration). The taxonomy of affect we had developed built on a definition of affect as ``a feeling or emotion as distinct from cognition'' \cite{russ1993affect}, specific to text-based chat as a communication medium that has features of other asynchronous communication media (e.g., the persistence of email) as well as features of synchronous communication (real-time, immediate responses, and the corresponding performance of emotion through punctuation, emoticons, and so on).
 
 %This paper also explains why a particular type of scientist, one who works in a highly risk-averse application domain, does not conform to the common characterization of all scientists as “end-user programmers”. We offer observations of how this type of scientist develops trustworthy software. We observe that these scientists work outside the ubiquitous method-based software development paradigms, using instead a knowledge acquisition-based approach to software development. We also observe that the scientist is an integral part of the software system and cannot be excluded from its consideration. We suggest that use of the knowledge acquisition software development model requires research into how to support acquisition of knowledge while developing software, how to satisfy oversight in regulated application domains, and how to successfully manage a scientific group using this model. \cite{kelly2015scientific} 
-% Kelly uses the "amethodical" language to label the way that scientists themselves concieve of their programming work: Scientific software development has been characterized as enduser programming (Segal, 2004), considered a candidate for Agile iterative development (e.g., Ackroyd et al., 2008), and has been regulated with waterfall-style software quality development standards (Canadian Standards Association). Scientists themselves characterize their development approach as “a-methodical” (Truex et al., 2000).
 % "define scientific software as application software that includes a large component of knowledge from the scientific application domain and is used to increase the knowledge of science for the purpose of solving real-world problems. We use the word “scientific” to include engineering applications."
 % The term “scientific software” has been used for a wide variety of software types that do not share the same quality requirements or the same management priorities. Software written to become a commodity product, for example, is managed to meet delivery dates and budget constraints. Software written to verify the safety of a radiation procedure, has to be correct, to the exclusion of all else. We also exclude from our definition, software whose primary purpose is to control equipment.
 % To clarify, we further characterize scientific software with the following: (a) a scientific domain specialist is necessarily involved in the pro- cess of developing the software; (b) the user of this software has some minimum knowledge of the associated scientific domain, to allow correct interpretation of the output data; (c) the user is the recipient of all output from the software, meaning the software’s purpose is not to control equipment; (d) the software’s primary purpose is to provide data for under- standing specific real world problems, meaning that the scientists we study do not develop generalized tools and libraries to support computational computing; (e) the overriding software quality is correctness – or more accu- rately, trustworthiness – and if trustworthiness fails, then all other software qualities are irrelevant.

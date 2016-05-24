@@ -5,7 +5,7 @@ The expectation of an experimental software product to be the primary solution t
 An over-zealous emphasis on the novelty and centrality of particular technical challenges (e.g., big data) is both historically erroneous in painting scientists as passive recipients of qualitative shifts in available technologies, despite the critical role of these very ``end-users'' in having brought about these shifts in the first place, over much larger time scales than some technology-innovation-centric abstracts would suggest. Computer-science study of scientific work sometimes describes the 
 current state of programming, code, data and analysis infrastructure, and software production in general (in the scientific domain) as somewhere between unsustainably frustrating and untenably chaotic. Recent technological advances have changed the set of available tools, accepted practices, and institutional resources. However, what is `recent?' A mid-2000s  article speaks of a `data avalanche' in environmental
 sciences, calling for a ``computer science agenda spanning databases, visualization, workflows'' \cite{howe2008end}.
-Speaking about the early 1950s, Edwards writes in A Vast Machine that ``climatologists ... 
+Speaking about the early 1950s, Edwards writes in \textit{A Vast Machine} that ``climatologists ... 
 faced not only an explosion of data but also a plethora of alternatives
 for coping with it'' \cite{edwards2010vast}. These are by far not the only paragraphs
 on the topic that paint a picture of the scientist coping with 
