@@ -4,26 +4,12 @@
 
 ## Intro
 
-Code in science matters. Now is a remarkable moment. It is positioned in a history of increased abundance of more varied and hihg-resultion data and more robust computational capabilities.
-
-In this work, we distinguish programming that MUST work [a la Kelly] from programming that can exist in an experimental, beta flux. Kelly makes this distinction articulated as ..... 
-
-We conducted a qualitative 18-month study with 46 scientists in four oceanography teams, and up to 100 in various computational skill workshops attended or observed. After data collection, the first author presented some of the findings to the scientists. In this talk, I presented the claim that  the ``best practices'' that they occasionally worried about not pursuing with enough diligence (``_should_ be using gitHub, but haven't gotten around to it....'') were more formal versions of practices already in place, but which extended beyond code to data and figures. For example, through formal software engineering testing was virtually nonexistent in the group studied, all groups engaged in a thorough, systematic validation and verification processes usign consistent visual artifacts. We deveop this argument further in Section XXX, but the other sections (XX and XX) also take the stance that code work must not be critiqued in isolation of the data and visual products that it requires and enables.
-
-The first author presented a preliminary articulation of these ideas to the interested study particupants, and one of the very last questions was: ``so you coverd in your talk some ways in which oceanographers can learned from software engineers and computer scientists, but what can computer scientists learn from oceanographers?'' We believe this is a question of utmost importance in the study of scientific programming practices by computer scientists, and this manuscript offers our answer so far.
-
 ## Background
 
 
 
 ## Introduce the Model
 
-During dissertation research, the first author developed a model of deliberate change in code work based on ethnographic study of four oceanography teams in the Pacific Northwest. Oceanography constituted an 
-
-FIGURE 1 goes here illustrating the model.
-
-
-This model is agnostic relative to the specific tool. Indeed, it is very liberal with regard to what constitutes a tool. 
 
 ## 3 Arguments
 
@@ -55,11 +41,3 @@ Another way to orient change is by appealing to a software advisor. WHAT IS AN S
 For example, one of the team's SAs says this: “You know, I just watch them, I can see when their eyes glaze over. The Principal Investigator (PI) is really good at pushing me on it: `do I - as a scientist - really need to know this?’ '' An uncharitable reading of this statement seems to reinforce the idea that scientists do not care about the quality of their code, and this dooms them to a life of ad-hoc hacks. However, this was spoken in the context of a group that at the beginning of the study had recently begun adopting version control with some associated growing pains, and by the end had integrated GitHub substantially into collaborative work practices. Furthermore, it was a post-doc and a graduate student who then took the initiative to ask the SA about automating some of the testing in their analytic pipeline, which he was more than delighted to begin explaining. A ``hack''  is typically described as ``not the best way of doing things,'' ``not very elegant,'' ``ugly but it works,'' or fialing to use something it ``really should be.'' Instead of interpreting these terms at their face judgmental value, we can observe the progression of the ``ugliness'' over time and see that if there is truly a ``perfect world'' that the scientists prioritize, individual small moments of flux will slowly inch those ``hacks'' in that  direction.
 
 ## Implications for Practice
-
-Of the model:
-
-Reframe dismay or surprise as comparison of working environment to the perfect world. Is the imagination of the perfect world is shared enough to justify deliberate change?
-
-Necessary for follow-through on change: [ ] awareness - I have heard of it & know what it is [ ] intention - I should probably be using it… [ ] momentum - If I already knew it, I would use it [ ] opportunity - Clear course of action is available
-
-Evaluate not only technical, but social and skills components of the working environment. Never “back at square one!” 
