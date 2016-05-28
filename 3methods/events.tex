@@ -1,0 +1,57 @@
+\begin{tikzpicture}[>=Latex]
+\tikzstyle{bubble}=[draw, fill=white, text centered, inner sep=1ex, thick]
+
+% axes
+\coordinate (O0) at (-0.5,-1) {};
+\coordinate (OX) at (8,-1) {};
+\coordinate (OY) at (-0.5,7) {};
+
+% x axis
+\draw[->,ultra thick] (O0)--(OX) node[below,midway]{};
+\node(AX0) at ($(O0)+(1,-0.5)$) {Building Awareness};
+\node(AX1) at ($(OX)+(-1,-0.5)$) {Solving Specific Problem};
+\draw[->,ultra thick] (AX0) -- (AX1);
+\node(AXM) at ($(O0)!0.5!(OX)+(0,-1.2)$) {\textbf{How Targeted the Work}};
+
+% y axis
+\draw[->,ultra thick] (O0)--(OY) node[left,midway]{};
+\node(AY0)[rotate=90] at ($(O0)+(-0.5,1)$) {Inspiration};
+\node(AY0)[rotate=90] at ($(O0)!0.5!(OY)+(-0.5,0)$) {Feedback};
+\node(AY0)[rotate=90] at ($(OY)+(-0.5,-1)$) {Collaboration};
+\node(AYM)[rotate=90] at ($(O0)!0.5!(OY)+(-1.2,0)$) {\textbf{Closeness of Work}};
+
+% boxes
+\node(P6)[style = bubble, text width=3cm, rotate=90, text height=1cm] at (0.5,5) {};
+\node(P6t)[text centered, text width=3cm, rotate=90] at (P6)
+{Dissecting\\ Paper};
+
+\node(P7)[style = bubble, text width=7cm, rotate=90, text height=1cm] at (7,3) {};
+\node(P7t)[align=right, text width=7cm, rotate=90] at (P7)
+{Group Sprint\\ (see Section 7.2)};
+
+\node(P1)[style = bubble, text width=6cm, text height=1cm] at (3,0) {};
+\node(P1t)[text centered, text width=6cm] at (P1)
+{Baselining group / department\\ Workshop; Course; Demo};
+
+
+\node(P2)[style = bubble, text width=3.5cm, text height=0.5cm] at (1.75,1.5) {};
+\node(P2t)[text centered, text width=3.5cm] at (P2)
+{Guest Lecture};
+
+
+\node(P3)[style = bubble, text width=3.5cm, text height=0.5cm] at (1.75,2.75) {};
+\node(P3t)[text centered, text width=3.5cm] at (P3)
+{Practice Talk};
+
+
+\node(P4)[style = bubble, text width=5cm, text height=1cm] at (6.5,1.75) {};
+\node(P4t)[text centered, text width=5cm] at (P4)
+{Pair Programming\\ Feedback};
+
+
+\node(P5)[style = bubble, text width=4.5cm, text height=1cm] at (3.75,5) {};
+\node(P5t)[text centered, text width=4.5cm] at (P5)
+{Joint Meeting\\ Feeling out Collab};
+
+
+\end{tikzpicture}

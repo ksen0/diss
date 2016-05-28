@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+\tikzstyle{circlestyle}=[draw=black, circle, text centered, thick]
+
+\tikzstyle{bracestyle}=[decorate,decoration={brace,amplitude=10pt,raise=4pt},yshift=0pt]
+\tikzstyle{bracestyleMirror}=[decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+
+\def\ra{3.5}
+\def\da{2*\ra}
+\def\rb{2}
+\def\db{2*\rb}
+
+\node(O1)[style = circlestyle, text width = \da cm] at (0,0) {};
+\node(O1t)[text centered, text width=5cm, anchor=north] at ($(O1.north)-(0, 1)$) 
+{Oceanographers\\ who do \emph{some} code work};
+
+\node(O2)[style = circlestyle, text width = \db cm, ultra thick] at (0,-1) {};
+\node(O2t)[text centered, text width=4cm, anchor=north] at ($(O2.north)-(0, 0.5)$) 
+{Core: actively\\ adopting/adapting new programming skills, across 4 teams at UW or UBC};
+
+\node(O3)[style = circlestyle, text width = \db cm] at (0,-4.2) {};
+\node(O3t)[text centered, text width=5cm, anchor=north] at ($(O3)-(0, 0)$) 
+{Scientists who code,\\ recruited via SWC for interviews};
+
+
+\draw [style = bracestyleMirror]
+(4,0 - \ra) -- (4,0 + \ra) node [black,midway,xshift=1.8cm] {25+21 = 46};
+
+\draw [style = bracestyleMirror]
+(4.5,0-\ra) -- (4.5,-4.2+\rb) node [black,midway,xshift=0.8cm] {7};
+
+\draw [style = bracestyle]
+(-4,-1-\rb) -- (-4,-1+\rb) node [black,midway,xshift=-0.8cm] {21};
+
+\draw [style = bracestyle]
+(-3.5,-4.2-\rb) -- (-3.5,-4.2+\rb) node [black,midway,xshift=-1.6cm] {7+13=20};
+\end{tikzpicture}

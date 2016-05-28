@@ -1,0 +1,83 @@
+\begin{tikzpicture}[>=Latex]
+
+%% styles
+\tikzstyle{boxstyle}=[draw, text centered, inner sep=1ex, thick]
+
+\tikzstyle{circlestyle}=[fill=white, draw=black, circle, text centered, line width=1mm]
+\tikzstyle{circlestyledash}=[style = circlestyle, dashed]
+\tikzstyle{cr}=[very thick]
+
+% observational data
+\node(P1)[style=boxstyle, text width=9.5cm, text height=2.0cm] at (5,0) {};
+\node(P1t)[text centered, anchor=north] at ($(P1.north)-(0, {(2.0*1/8)})$) {\textbf{observational data}};
+
+\node(P11)[style=boxstyle, text width=4cm, text height=0.5cm, text depth=.2cm] at ($(P1.west)!0.27!(P1.east) + (0,-{(2.0*1/6)})$) {data collection at set};
+\node(P12)[style=boxstyle, text width=4cm, text height=0.5cm, text depth=.2cm] at ($(P1.east)!0.27!(P1.west) + (0,-{(2.0*1/6)})$) {sensor networks};
+
+
+%
+\node(P2)[style=boxstyle, text width=4cm] at (2,-5.0) 
+{ modeling\\ computer simulation\\ numerical approx.\\ differential equations };
+
+%
+\node(P3)[style=boxstyle, text width=3cm] at (8.5,-4.5) 
+{ transformation comparison };
+
+%
+\node(P4)[style=boxstyle, text width=3cm] at (8.5,-6.5) 
+{ display sharing };
+
+
+% text nodes
+\node(T1)[text centered, text width = 6cm] at ($(P1.south)!0.5!(P2.north)-(1.0,0)$) 
+{ parameter ranges\\ boundary conditions };
+
+\node(T2)[text centered, text width = 3cm] at ($(P1.south west)!0.5!(P2.north west)-(1.6,0)$) 
+{ hypotheses };
+
+
+% smal circles
+\node(A)[style = circlestyledash] at (P1.north east) { A };
+\node(C)[style = circlestyle] at (P2.north west) { C };
+\node(D)[style = circlestyledash] at (P3.south east) { D };
+
+% arrows
+\draw[->, style = cr, dashed] (P1.south -| T1) -- (T1) -- (P2.north -| T1);
+
+\draw[->, style = cr] ($(P1.south -| P3)-(0.3,0)$) -- ($(P3.north)-(0.3,0)$);
+\draw[->, style = cr] ($(P1.south -| P3)+(0.3,0)$) -- ($(P3.north)+(0.3,0)$);
+\draw[->, style = cr] (P1.south -| P3) -- (P3) node [midway,style = circlestyledash] (B) {B};
+
+\draw[->, style = cr] ($(P3.west -| P2.east)-(0,0.3)$) -- ($(P3.west)-(0,0.3)$);
+\draw[->, style = cr] ($(P3.west -| P2.east)+(0,0.3)$) -- ($(P3.west)+(0,0.3)$);
+\draw[->, style = cr] (P3.west -| P2.east) -- (P3) node [midway,style = circlestyle] (BS) {B};
+
+\draw[->, style = cr] (P3) -- (P4);
+
+
+% dashed and bend
+\draw[style = cr, dashed] (P2.west) to [out=180,in=-90] (T2.south);
+\draw[->, style = cr, dashed] (T2.north) to [out=90,in=180] (P1.west);
+
+\draw[->, style = cr, dashed] (P4.west) to [bend left] (BS);
+\draw[->, style = cr, dashed] (P4.east) to [out=0,in=-90] ($(P3.east) + (1.3,0)$) to [out=90,in=0] (B.east);
+
+% key
+\def\keyOffset{-8}
+\node(K0)[text width = 4cm] at ($(3,\keyOffset)$) {\bf Key:};
+
+\node(K1)[text width = 4cm] at ($(8,\keyOffset-0.5)$) {
+transition between steps of a single line of inquiry};
+\draw[->, style = cr, dashed] ($(K1.west) - (0.5,-0.5)$) -- ($(K1.west) - (0.5,0.5)$);
+
+\node(K2)[text width = 4cm] at ($(8,\keyOffset-2.0)$) {
+research findings informing next steps};
+\draw[->, style = cr] ($(K2.west) - (0.5,-0.5)$) -- ($(K2.west) - (0.5,0.5)$);
+
+\node(K3)[text width = 4cm] at ($(3,\keyOffset-1)$) {code work};
+\node(K31)[style = circlestyle, text width = 0.4cm] at ($(K3.west) - (0.5,0)$) {};
+
+\node(K4)[text width = 4cm] at ($(3,\keyOffset-2)$) {optional code work};
+\node(K41)[style = circlestyledash, text width = 0.4cm] at ($(K4.west) - (0.5,0)$) {};
+
+\end{tikzpicture}
