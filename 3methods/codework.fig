@@ -27,7 +27,7 @@
 
   \caption[Categorization of code work observed.]%
   {\narrower
-\textbf{  Categorization of code work observed.} The categorization of ``kleenex'' and ``library'' maps onto the distinction embraced by Heaton and Carver \cite{heaton2015claims}; data stewardship can be exemplified in the Ocean Informatics work \cite{baker2008enabling}, and ``Goliath'' refers to major programs that are programming environments that enable constituent libraries and packages, with the phrase borrowed from a participant story included in Section 4.3. The arrangement of the categories and distinctions made reflect the focus of this study on the individual experience of doing code work - writing from scratch or modifying? Open-ended approach considering multiple possibilities, or skeptical and interrogating a recent implementation of one such possibility? \kt{add kelly distinctions to this table}
+\textbf{  Categorization of code work observed.} The categorization of ``kleenex'' and ``library'' maps onto the distinction embraced by Heaton and Carver \cite{heaton2015claims}; data stewardship can be exemplified in the Ocean Informatics work \cite{baker2008enabling}, and ``goliath'' refers to major programs that are programming environments that enable constituent libraries and packages, with the phrase borrowed from a participant story included in Section 4.3. The arrangement of the categories and distinctions made reflect the focus of this study on the individual experience of doing code work - writing from scratch or modifying? Open-ended approach considering multiple possibilities, or skeptical and interrogating a recent implementation of one such possibility?
   }
   \label{fig:codework}
 

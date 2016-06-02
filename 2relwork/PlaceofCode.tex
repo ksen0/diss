@@ -3,7 +3,7 @@
 %% styles
 \tikzstyle{boxstyle}=[draw, text centered, inner sep=1ex, thick]
 
-\tikzstyle{circlestyle}=[fill=white, draw=black, circle, text centered, line width=1mm]
+\tikzstyle{circlestyle}=[fill=white, draw=black, circle, text centered, line width=1mm, minimum size=1cm]
 \tikzstyle{circlestyledash}=[style = circlestyle, dashed]
 \tikzstyle{cr}=[very thick]
 
@@ -16,8 +16,8 @@
 
 
 %
-\node(P2)[style=boxstyle, text width=4cm] at (2,-5.0) 
-{ modeling\\ computer simulation\\ numerical approx.\\ differential equations };
+\node(P2)[style=boxstyle, text width=5cm] at (2,-5.0) 
+{ modeling\\ computer simulation\\numerical approximation\\ differential equations };
 
 %
 \node(P3)[style=boxstyle, text width=3cm] at (8.5,-4.5) 
@@ -75,9 +75,9 @@ research findings informing next steps};
 \draw[->, style = cr] ($(K2.west) - (0.5,-0.5)$) -- ($(K2.west) - (0.5,0.5)$);
 
 \node(K3)[text width = 4cm] at ($(3,\keyOffset-1)$) {code work};
-\node(K31)[style = circlestyle, text width = 0.4cm] at ($(K3.west) - (0.5,0)$) {};
+\node(K31)[style = circlestyle, minimum size=0.7cm] at ($(K3.west) - (0.5,0)$) {};
 
 \node(K4)[text width = 4cm] at ($(3,\keyOffset-2)$) {optional code work};
-\node(K41)[style = circlestyledash, text width = 0.4cm] at ($(K4.west) - (0.5,0)$) {};
+\node(K41)[style = circlestyledash, minimum size=0.7cm] at ($(K4.west) - (0.5,0)$) {};
 
 \end{tikzpicture}

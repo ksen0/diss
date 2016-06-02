@@ -10,6 +10,7 @@
 \usepackage{soul}
 \usepackage{tikz}
 \usetikzlibrary{shapes,backgrounds,calc,arrows,positioning,arrows.meta,decorations.pathreplacing}
+\usepackage{amssymb}
 
 % this is necessary so, the \url macro works
 \usepackage{url}
@@ -24,7 +25,7 @@
 \usepackage{rotating}
 % very table! much scientific! wow!
 \usepackage{booktabs, tabularx}
-% define a new column type: where width is aoutomatically adjysted 'X' and set ragged right
+% define a new column type: where width is automatically adjusted 'X' and set ragged right
 \newcolumntype{R}{>{\raggedright\arraybackslash}X}
 \newcolumntype{G}{>{\columncolor{Gray}}R}
 % \cline in codework.fig
@@ -79,7 +80,7 @@
 % \usepackage{natbib}
 % \def\bibpreamble{\protect\addcontentsline{toc}{chapter}{Bibliography}}
 
-\setcounter{tocdepth}{1}  % Print the chapter and sections to the toc
+\setcounter{tocdepth}{2}  % Print the chapter and sections to the toc
  
 
 % ==========   Local defs and mods
@@ -110,7 +111,8 @@
 \Year{2014-2016}
 \Program{University of Washington Computer Science and Engineering}
 
-\Chair{\newline Cecilia Aragon}{Human Centered Design \& Engineering}
+% Heinrich: removed the leading "\newline" - it produces compile errors
+\Chair{Cecilia Aragon}{Human Centered Design \& Engineering}
 \Chair{James Fogarty}{Computer Science \& Engineering}
 \Signature{Gina Neff}
 
@@ -144,12 +146,16 @@
 \acknowledgments{
 
 This document is essentially a systematic reflection on a variety of things that I learned from dozens of inventive, curious, and reflective people. It would not be possible if these very busy people did not take the time out of their days (over weeks and months) to explain what they were doing, sometimes even to endure my hovering over them with questions all day. I am grateful for their patience, their generosity, and their goodwill towards me.
+
+%I had always been enamoured with the artificial, with mathematics and computer science as a massive creative force. Leading up to and during my dissertation research, I realized that I am also awed by the collective human endeavor that makes the artificial possible, and thereby extends its own capability. Science is the poetry of humanity having a conversation with itself for thousands of years.
+
+The University of Washington CSE and HCDE communities have had a massive impact on my personal and intellectual growth. Each person on my reading committee has been extraordinarily supportive, and their insights pushed this work from an open-ended observation to a coherent set of concepts. My co-advisors, Professors James Fogarty and Cecilia Aragon, are two of the most dedicated mentors I have ever had the pleasure to know. Through each of my struggles, despite their own, they held my best interests in mind, as they do with each of their students. Their respective complementary research skills and tastes have challenged and inspired me to develop my own. Professor Gina Neff has gone above and beyond, offering me feedback, guidance, and perspective throughout the analysis and writing process. Many peers and faculty in CSE and HCDE enthusiastically shared with me their time, energy, and insights, in the best possible demonstration of what it is to be collegial.
 }
 
 %
 % ----- dedication
 %
-%\dedication{\begin{center}to Werner Herzog, my spirit animal\end{center}}
+\dedication{\begin{center}To Olga and Sasha, without whom I could not have started this endeavor.\\To Heinrich, without whom I could not have followed through.\end{center}}
 
 %
 % end of the preliminary pages

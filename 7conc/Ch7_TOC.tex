@@ -1,0 +1,89 @@
+\begin{tikzpicture}[>=Latex]
+
+\newcommand{\circles}[4]
+{
+\pgfmathsetmacro{\d}{#2*2.0}
+\foreach \i in {1,...,#1}
+{
+	\pgfmathsetmacro{\x}{((\i-1)-((#1-1)/2))*#2+#3}
+	\node[fill=white, draw=black, circle, text centered, minimum size=\d cm] at (\x,#4) {};
+}
+}
+
+\begin{scope}[name=sb]
+% figure b
+\tikzstyle{box}=[draw, text centered, fill=white];
+
+\circles{4}{0.5}{0}{2}
+\node(P1)[style=box, text width=1.5cm] at (0,2) {CS/SE};
+
+\node(P11)[style=box, dashed, rounded corners=0.3cm, very thick, text width=4cm] at (0,0.5) {workshops, tutorials};
+
+\circles{12}{0.5}{0}{-1}
+\node(P2)[style=box, text width=5.5cm] at (0,-1) {Many science teams};
+
+\node(P3)[style=box, text width=5.5cm, text height=0.5cm] at (0,-2.5) {};
+\node(P3t)[text centered] at (P3){code / tool(s) / service(s)};
+
+\node(P4)[style=box, text width=5.5cm, text height=0.5cm] at (0,-4) {};
+\node(P4t)[text centered] at (P4){many phenomena of interest};
+
+
+\draw[->, very thick] (P1) -- (P11) -- (P2);
+\draw[->, very thick] (P2) -- (P3) -- (P4);
+
+\node [] at (0,-5){\bf (b)};
+\end{scope}
+
+\begin{scope}[shift={($(10cm,-2cm)$)}, name=sc]
+% figure c
+\tikzstyle{box}=[draw, text centered, fill=white];
+
+\circles{9}{0.5}{0}{1.7}
+\node(P1)[style=box, text width=4cm] at (0,1.7) {Particular team(s)};
+
+\node(P2)[style=box, dashed, rounded corners=0.3cm, very thick, text width=4cm] at (0,0) {tool(s) / service(s)};
+
+\node(P3)[style=box, text height=0.5cm, text width=5cm] at (0,-1.7) {};
+\node(P3t)[text centered] at (P3){Phenomenon of interest};
+
+\circles{4}{0.5}{-4.5}{0}
+\node(P4)[style=box, text width=1.5cm] at (-4.5,0) {CS/SE};
+
+\coordinate (A12) at ($(P1.south)!0.6!(P2.north)$);
+\coordinate (A23) at ($(P2.south)!0.4!(P3.north)$);
+\coordinate (A24) at (P3.north west |- P4);
+
+\draw[->, very thick] (P1) -- (P2) -- (P3);
+\draw[->, very thick] (P4) -- (A24) |- (A23);
+\draw[->, very thick] (A24) |- (A12);
+
+\node [] at (0,-3){\bf (c)};
+\end{scope}
+
+
+\begin{scope}[shift={($(8.75cm,4cm)$)}, name=sc]
+% figure a
+\tikzstyle{box}=[draw, text centered, fill=white];
+
+\circles{15}{0.5}{0}{1.5}
+\node(P1)[style=box, text width=4cm] at (0,1.5) {Many science teams};
+
+\node(P2)[style=box, text width=7.5cm, text height=0.5cm] at (0, 0) {};
+\node(P2t)[text centered] at (P2){infrastructure + software support};
+
+\node(P3)[style=box, text width=7.5cm, text height=0.5cm] at (0,-1.5) {};
+\node(P3t)[text centered] at (P3){many phenomena of interest};
+
+\circles{4}{0.5}{-7}{1}
+\node(P4)[style=box, text width=1.5cm] at (-7,1) {CS/SE};
+
+\node(P5)[draw, text width=1.2cm, text height=4cm, dashed, rounded corners=0.7cm, very thick] at (P2.west) {};
+
+\draw[->, very thick] (P1) -- (P2) -- (P3);
+\draw[->, very thick] (P4) -- (P4 -| P5.west);
+
+\node [] at (-8.75,1){\bf (a)};
+\end{scope}
+
+\end{tikzpicture}

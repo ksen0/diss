@@ -13,12 +13,15 @@ for coping with it'' \cite{edwards2010vast}. These are by far not the only parag
 on the topic that paint a picture of the scientist coping with 
 ``cataclysmic'' amounts of data, requiring technological innovation. 
 
+
 \begin{figure}
     \centering
-    \includegraphics[page=1,width=1\textwidth]{7conc/Ch7_TOC.pdf}
+    \linespread{1.0}
+    \resizebox{1\textwidth}{!}{\input{7conc/Ch7_TOC.tex}}
     \caption[Three different ways in which computer science intervenes in domain-science code work.]{\textbf{Three different ways in which computer science intervenes in domain-science code work.} (a) By working on a particular project that is part of a larger infrastructural and collaborative effort and which ultimately aims to support many scientists in their study of many different phenomena; (b) by organizing educational interventions, like workshops, tutorials, and mentorship programs to support scientists who code in developing programming skills, who are then mostly on their own to apply those skills to particular projects and research questions of interest; and (c) by collaborating closely with a group pursuing particular research questions, and building tools or intervention specifically tailored to that group or context. ``CS/SE'' stands for ``Computer Science / Software Engineering'' but extends other computing-affiliated researchers.}
     \label{fig:ch7toc}
 \end{figure}
+
 
 This narrative does a disservice to both computer scientists and domain scientist working on cutting-edge experimental software. It fails to use the rich resources available from the domain scientists side, and it fails to provide room to recognize the successes of projects that do not result in a complete achievement of the technical goals. In a landscape that benefits from experimentation and trial-and-error, I argue that there are more productive alternatives. Each section highlights an alternative, and the concluding section synthesizes these into an evaluative stance that emphasizes social and skill outcomes for building and sustaining constructive momentum.
 

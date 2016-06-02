@@ -9,9 +9,11 @@ As he first described the ``very informal, one-hour lunchtime meeting of users o
 
 He described a particular time when his \textit{intention} (for finding better data storage formats, as evidenced by trying different things) turns into \textit{action}: ``Prior to [a talk on how to use HDF5\footnote{HDF5 is a data format that is well-suited for storage and manipulation of large numerical datasets from NumPy. See http://www.h5py.org/} with the HPC system], I used a lot of different ways to store my data. I used MySQL databases. I have used FAT files. This talk about how and why HDF5 is a better, safer format for my data really convinced me to \textbf{take the plunge}. I'm pretty proud of it, and it has saved me some headaches certainly since that time.'' As I continue to ask him about ``taking the plunge,'' he tells me: ``It actually wasn't quite so extensive as [that phrase implies]. It was really just the process of changing a few scripts in terms of how I load the database... It was quick, it was \textbf{quite painless}. I didn't have to do a whole lot of work. They were already Python packages, for instance, like PyTables and H5Py for interacting with HDF5. It \textbf{wasn't nearly so bad as that}.''
 
+
 \begin{figure}[tbhp]
     \centering
-    \includegraphics[width=1\textwidth]{6time/Cyclev3B.pdf}
+    \linespread{1.0}
+    \resizebox{1\textwidth}{!}{\input{6time/Cyclev3B.tex}}
     \caption[The cycle of deliberate change, zoomed in on the moment of flux.]{\textbf{The cycle of deliberate change, zoomed in on the moment of flux.} Building on Figure \ref{fig:cycle1} by  breaking the ``moment of flux'' into its components. The flow from awareness, to intention, and finally to action is driven by momentum and opportunity, which can be (often is) external to the individual of project. The flow can also go in the reverse, ``de-escalation'' direction.}
     \label{fig:cycle2}
 \end{figure}

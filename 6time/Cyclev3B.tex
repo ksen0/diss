@@ -1,0 +1,75 @@
+\begin{tikzpicture}[>=Latex]
+
+
+\tikzstyle{boxstyle}=[draw, text centered, rounded corners, inner sep=1ex, thick]
+\tikzstyle{cr}=[thick]
+
+% 
+\node(P1)[draw, text width=4cm, text height=1cm, ultra thick] at (-2.25,6) {};
+\node(P1t)[text centered] at (P1) {Working Environment};
+
+\node(P2)[draw, text width=4cm, text height=1cm, ultra thick] at (2.25,6) {};
+\node(P2t)[text centered] at (P2) {Perfect World};
+
+\node(M)[draw, text width=12cm, text height=5cm, ultra thick] at (0,0) {};
+\node(Mt)[text centered] at ($(M.north)+(0,-0.7)$) {\bf Moment of Flux};
+
+
+% text boxes
+\node(T1)[text centered, text width=4cm] at ($(M.north west)+(-0.5,1)$) 
+{Adoption / Adaptation of tools / skills};
+\node(T2)[text centered, text width=4cm] at ($(P1.south)!0.5!(P1 |- M.north)$) 
+{Working environment is subject to change};
+\node(T3)[text centered, text width=4cm] at ($(P2.south)!0.5!(P2 |- M.north)$) 
+{Vision of perfect world informs change};
+\node(T4)[text centered, text width=4cm] at ($(M.north east)+(0.5,1)$) 
+{Expands vocabulary and concept of what is possible};
+
+% lines outside of "moment of flux"
+% left, right
+\draw[->, style=cr] ($(M.west)!0.5!(M.north west)$) -| (T1) |- (P1.west);
+\draw[->, style=cr] ($(M.east)!0.5!(M.north east)$) -| (T4) |- (P2.east);
+
+% middle
+\draw[->, style=cr] (T2 |- M.north) -- (T2) -- (P1);
+\draw[->, style=cr] (T3 |- M.north) -- (T3) -- (P2);
+
+
+% insife of "Moment of Flux"
+\node(Q1)[draw, text width=2.5cm, text height=0.5cm] at (-4,-0.5) {};
+\node(Q1t)[text centered] at (Q1) {Awareness};
+
+\node(Q2)[draw, text width=2.5cm, text height=0.5cm] at (0,-0.5) {};
+\node(Q2t)[text centered] at (Q2) {Intention};
+
+\node(Q3)[draw, text width=2.5cm, text height=0.5cm] at (4,-0.5) {};
+\node(Q3t)[text centered] at (Q3) {Action};
+
+\node(Q4t)[text centered] at ($(Q2)+(0,-1.5)$) {de-escalation};
+\node(Q5t)[text centered] at ($(Q2)+(0,1.5)$) {momentum $\&$ opportunity};
+
+\draw[->, style=cr] (Q1) -- (Q2);
+\draw[->, style=cr] (Q2) -- (Q3);
+
+
+% momentum $\&$ opportunity
+\coordinate (Q2k) at ($(Q2.north)!0.5!(Q2.north west)$);
+\draw[style=cr] (Q1) |- (Q5t);
+\draw[->, style=cr] (Q2k |- Q5t.south) -- (Q2k);
+
+
+\coordinate (Q2j) at ($(Q2.north)!0.5!(Q2.north east)$);
+\draw[style=cr] (Q2j |- Q5t.south) -- (Q2j);
+\draw[->, style=cr] (Q5t.east) -| (Q3.north);
+
+% de-escalation
+\coordinate (Q2h) at ($(Q2.south)!0.5!(Q2.south west)$);
+\draw[<-, style=cr] (Q1) |- (Q4t);
+\draw[style=cr] (Q2h |- Q4t.north) -- (Q2h);
+
+
+\coordinate (Q2g) at ($(Q2.south)!0.5!(Q2.south east)$);
+\draw[->, style=cr] (Q2g |- Q4t.north) -- (Q2g);
+\draw[style=cr] (Q4t.east) -| (Q3.south);
+
+\end{tikzpicture}
